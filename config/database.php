@@ -1,6 +1,6 @@
 <?php
 $host = gethostbyname("sql305.infinityfree.com");
-$db   = "if0_40991675_santeria_db"; // 👈 NOMBRE REAL, NO XXX
+$db   = "if0_40991675_santeria"; // 👈 NOMBRE REAL, NO XXX
 $user = "if0_40991675";
 $pass = "4d84ka16na3g";
 
