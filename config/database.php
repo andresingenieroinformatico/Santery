@@ -1,19 +1,21 @@
 <?php
-$host = "localhost";
-$db   = "santeria_db";
-$user = "root";
-$pass = "Da12072022";
+$host = "sql305.infinityfree.com";
+$db   = "if0_40991675_santeria";
+$user = "if0_40991675";
+$pass = "4d84ka16na3g";
 
 try {
     $pdo = new PDO(
-        "mysql:host=$host;dbname=$db;charset=utf8",
+        "mysql:host=$host;dbname=$db;charset=utf8mb4",
         $user,
         $pass,
         [
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
+            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+            PDO::ATTR_EMULATE_PREPARES => false
         ]
     );
 } catch (PDOException $e) {
     die("Error de conexión: " . $e->getMessage());
 }
+return $pdo;
